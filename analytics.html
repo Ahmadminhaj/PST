@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#5b45f5">
+<title>PSD My Work - Analytics</title>
+<link rel="stylesheet" href="analytics.css">
+</head>
+<body>
+<div class="app">
+<header class="header">
+<a class="back-btn" href="dashboard.html">←</a>
+<div class="header-title"><h1>Analytics</h1><p>PSD My Work</p></div>
+<a class="settings-btn" href="settings.html">⚙</a>
+</header>
+
+<main>
+<section class="intro"><span>INSIGHTS</span><h2>Spending Analytics</h2><p>Understand your subscription spending at a glance.</p></section>
+
+<section class="summary-grid">
+<div class="summary"><span>MONTHLY</span><strong id="monthly">₹0</strong><small>Estimated monthly</small></div>
+<div class="summary"><span>YEARLY</span><strong id="yearly">₹0</strong><small>Estimated yearly</small></div>
+</section>
+
+<section class="card">
+<div class="card-title"><div><span>BREAKDOWN</span><h3>Category Spending</h3></div></div>
+<div id="bars" class="bars"></div>
+<div id="noData" class="no-data">Add subscriptions to see analytics.</div>
+</section>
+
+<section class="card">
+<div class="card-title"><div><span>SUMMARY</span><h3>Subscription Overview</h3></div></div>
+<div class="row"><span>Total subscriptions</span><strong id="total">0</strong></div>
+<div class="row"><span>Active subscriptions</span><strong id="active">0</strong></div>
+<div class="row"><span>Due within 7 days</span><strong id="due">0</strong></div>
+<div class="row"><span>Average monthly cost</span><strong id="average">₹0</strong></div>
+</section>
+
+<section class="card tip"><div class="tip-icon">💡</div><div><strong>Spending Tip</strong><p>Review subscriptions you no longer use and keep your recurring costs under control.</p></div></section>
+</main>
+
+<nav class="bottom-nav">
+<a href="index.html">⌂<small>Home</small></a>
+<a href="dashboard.html">▣<small>Dashboard</small></a>
+<a href="subscriptions.html">☷<small>Subscriptions</small></a>
+<a href="analytics.html" class="active">◔<small>Analytics</small></a>
+<a href="settings.html">⚙<small>Settings</small></a>
+</nav>
+</div>
+<script src="analytics.js"></script>
+</body>
+</html>
