@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#5b45f5">
+<title>PSD My Work - Settings</title>
+<link rel="stylesheet" href="settings.css">
+</head>
+<body>
+<div class="app">
+<header class="header">
+<button class="back-btn" id="backBtn" type="button">←</button>
+<div class="header-title"><h1>Settings</h1><p>PSD My Work</p></div>
+<div class="header-space"></div>
+</header>
+
+<main>
+<section class="section">
+<div class="section-title"><span>ACCOUNT</span><h2>Account Information</h2></div>
+<div class="account-card">
+<div class="avatar" id="avatar">U</div>
+<div class="account-details"><strong id="displayName">User Name</strong><span id="displayEmail">user@example.com</span></div>
+<button class="edit-btn" id="editAccountBtn" type="button">Edit</button>
+</div>
+<div class="form-card" id="accountForm">
+<label>Full Name<input type="text" id="nameInput" value="User Name" placeholder="Enter your name"></label>
+<label>Email Address<input type="email" id="emailInput" value="user@example.com" placeholder="Enter your email"></label>
+<label>Phone Number<input type="tel" id="phoneInput" placeholder="+91 00000 00000"></label>
+<button class="save-btn" id="saveAccountBtn" type="button">Save Account Information</button>
+</div>
+</section>
+
+<section class="section">
+<div class="section-title"><span>PREFERENCES</span><h2>App Preferences</h2></div>
+<div class="settings-card">
+<div class="setting-row"><div class="setting-icon purple">₹</div><div class="setting-info"><strong>Currency</strong><small id="currencyValue">USD ($)</small></div><select id="currencySelect" class="select"><option>USD ($)</option><option>INR (₹)</option><option>EUR (€)</option><option>GBP (£)</option></select></div>
+<div class="setting-row"><div class="setting-icon green">🔔</div><div class="setting-info"><strong>Notifications</strong><small>Payment and app alerts</small></div><label class="switch"><input type="checkbox" id="notificationToggle" checked><span></span></label></div>
+<div class="setting-row"><div class="setting-icon orange">⏰</div><div class="setting-info"><strong>Payment Reminders</strong><small>Remind me before payments</small></div><label class="switch"><input type="checkbox" id="reminderToggle" checked><span></span></label></div>
+<div class="setting-row"><div class="setting-icon blue">☀</div><div class="setting-info"><strong>Appearance</strong><small id="appearanceValue">Light Mode</small></div><select id="appearanceSelect" class="select"><option value="light">Light</option><option value="dark">Dark</option></select></div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-title"><span>SECURITY</span><h2>Security & Privacy</h2></div>
+<div class="settings-card">
+<button class="action-row" id="passwordBtn" type="button"><div class="setting-icon purple">🔒</div><div class="setting-info"><strong>Change Password</strong><small>Update your account password</small></div><b>›</b></button>
+<button class="action-row" id="privacyBtn" type="button"><div class="setting-icon green">✓</div><div class="setting-info"><strong>Privacy</strong><small>Manage your privacy preferences</small></div><b>›</b></button>
+</div>
+</section>
+
+<section class="section">
+<div class="section-title"><span>MORE</span><h2>About</h2></div>
+<div class="settings-card">
+<button class="action-row" id="helpBtn" type="button"><div class="setting-icon blue">?</div><div class="setting-info"><strong>Help & Support</strong><small>Get help with PSD My Work</small></div><b>›</b></button>
+<button class="action-row" id="aboutBtn" type="button"><div class="setting-icon orange">i</div><div class="setting-info"><strong>About PSD My Work</strong><small>Version 1.0.0</small></div><b>›</b></button>
+</div>
+</section>
+
+<button class="logout-btn" id="logoutBtn" type="button">Log Out</button>
+</main>
+
+<nav class="bottom-nav">
+<a href="index.html">⌂<small>Home</small></a>
+<a href="dashboard.html">▣<small>Dashboard</small></a>
+<a href="subscriptions.html">☷<small>Subscriptions</small></a>
+<a href="analytics.html">◔<small>Analytics</small></a>
+<a href="settings.html" class="active">⚙<small>Settings</small></a>
+</nav>
+<div class="toast" id="toast"></div>
+</div>
+<script src="settings.js"></script>
+</body>
+</html>
