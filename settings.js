@@ -45,5 +45,5 @@ appearanceSelect.addEventListener("change",()=>{localStorage.setItem("psd_appear
 document.getElementById("passwordBtn").addEventListener("click",()=>showToast("Change Password selected."));
 document.getElementById("privacyBtn").addEventListener("click",()=>showToast("Privacy settings selected."));
 document.getElementById("helpBtn").addEventListener("click",()=>showToast("Help & Support selected."));
-document.getElementById("aboutBtn").addEventListener("click",()=>showToast("PSD My Work - Version 1.0.0"));
+document.getElementById("aboutBtn").addEventListener("click",()=>showToast("PST My Work - Version 1.0.0"));
 document.getElementById("logoutBtn").addEventListener("click",()=>{if(window.confirm("Do you want to log out?"))window.location.href="index.html";});
