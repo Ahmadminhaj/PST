@@ -37,10 +37,17 @@ const reminderToggle=document.getElementById("reminderToggle"),savedReminders=lo
 if(savedReminders!==null)reminderToggle.checked=savedReminders==="true";
 reminderToggle.addEventListener("change",()=>{localStorage.setItem("psd_reminders",reminderToggle.checked);showToast(reminderToggle.checked?"Payment reminders enabled.":"Payment reminders disabled.")});
 
-const appearanceSelect=document.getElementById("appearanceSelect"),appearanceValue=document.getElementById("appearanceValue"),savedAppearance=localStorage.getItem("psd_appearance");
-function applyAppearance(mode){document.body.classList.toggle("dark",mode==="dark");appearanceValue.textContent=mode==="dark"?"Dark Mode":"Light Mode"}
-if(savedAppearance){appearanceSelect.value=savedAppearance;applyAppearance(savedAppearance)}
-appearanceSelect.addEventListener("change",()=>{localStorage.setItem("psd_appearance",appearanceSelect.value);applyAppearance(appearanceSelect.value);showToast(appearanceSelect.value==="dark"?"Dark mode enabled.":"Light mode enabled.")});
+const darkModeToggle=document.getElementById("darkModeToggle"),appearanceValue=document.getElementById("appearanceValue");
+const savedTheme=localStorage.getItem("pst_theme")||"light";
+darkModeToggle.checked=savedTheme==="dark";
+appearanceValue.textContent=darkModeToggle.checked?"Dark Mode":"Light Mode";
+darkModeToggle.addEventListener("change",()=>{
+const mode=darkModeToggle.checked?"dark":"light";
+localStorage.setItem("pst_theme",mode);
+document.documentElement.classList.toggle("dark",darkModeToggle.checked);
+appearanceValue.textContent=darkModeToggle.checked?"Dark Mode":"Light Mode";
+showToast(darkModeToggle.checked?"Dark mode enabled.":"Light mode enabled.");
+});
 
 document.getElementById("passwordBtn").addEventListener("click",()=>showToast("Change Password selected."));
 document.getElementById("privacyBtn").addEventListener("click",()=>showToast("Privacy settings selected."));

@@ -1,0 +1,12 @@
+html.dark{color-scheme:dark}
+html.dark body{background:#101018;color:#f3f3f7}
+html.dark .app{background:#101018;color:#f3f3f7}
+html.dark .header,html.dark .bottom-nav,html.dark .card,html.dark .stat-card,html.dark .summary,html.dark .feature-card,html.dark .step,html.dark .settings-card,html.dark .account-card,html.dark .form-card,html.dark .setting-row,html.dark .action-row,html.dark .quick-card,html.dark .subscription-card,html.dark .empty,html.dark .empty-state,html.dark .modal-box{background:#191923;color:#f3f3f7;border-color:#2d2d3b}
+html.dark .hero{background:#211f35;border-color:#393550}
+html.dark .header p,html.dark .header-title p,html.dark .muted,html.dark small,html.dark .stat-card small,html.dark .welcome p,html.dark .hero p,html.dark .feature-card p,html.dark .step p,html.dark .setting-info small,html.dark .account-details span{color:#aaaabd}
+html.dark input,html.dark select,html.dark textarea,html.dark .select,html.dark .form-card input{background:#191923;color:#f3f3f7;border-color:#3a3a4a}
+html.dark .back-btn,html.dark .settings-btn{background:#191923;color:#f3f3f7;border-color:#3a3a4a}
+html.dark .action-row:hover{background:#232330}
+html.dark .logout-btn{background:#191923;border-color:#63383e}
+html.dark .filter,html.dark .modal-head button{background:#232330;color:#f3f3f7;border-color:#3a3a4a}
+html.dark .bar-track{background:#30303e}
