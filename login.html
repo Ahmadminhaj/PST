@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#5b45f5" />
+    <title>PST My Work - Login</title>
+    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="theme.css" />
+    <script src="auth.js"></script>
+  </head>
+  <body>
+    <div class="login-shell">
+      <div class="login-card">
+        <div class="brand-wrap">
+          <div class="brand-icon">P</div>
+          <div>
+            <small>Welcome back</small>
+            <h1>PST My Work</h1>
+          </div>
+        </div>
+
+        <form id="loginForm" class="login-form" novalidate>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required />
+
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" placeholder="Enter your password" required />
+
+          <button type="submit" class="login-btn">Login</button>
+          <p id="loginMessage" class="login-message" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+
+    <script src="login.js"></script>
+  </body>
+</html>
